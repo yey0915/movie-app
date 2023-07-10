@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import { MovieList } from './components/MovieList';
 
 function App() {
   const [movies, setMovies] = useState([
@@ -28,7 +29,7 @@ function App() {
 
   return (
     <div>
-      헬로우
+      <MovieList movies={movies} />
     </div>
   );
 }
